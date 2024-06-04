@@ -144,7 +144,7 @@ section {
     min-height: fit-content;
 
 }
-section_container {
+section_container { /*check this*/
     display: flex;
 }
 
@@ -173,16 +173,17 @@ section_container {
 .section_text_p1 {
     text-align: center;
     font-size: 1.5rem;
+    margin-bottom: 1rem;
 
 }
 .section_text_p2 {
     font-size: 1.5rem;
-    margin-bottom: 1rem; 
+    margin-bottom: 1.25rem; 
 }
 .title {
     font-size: 2.0rem;
     text-align: center;
-    margin-bottom: 0.25rem;
+    margin-bottom: 1rem;
     color: rgb(195, 223, 230);
 }
 #socials_container {
