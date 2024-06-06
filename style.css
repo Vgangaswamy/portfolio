@@ -153,7 +153,7 @@ section_container { /*check this*/
 #profile {
     display: flex;
     justify-content: center;
-    gap: 5rem;
+    gap: 3rem;
     height: 80vh;
 }
 .section_pic_container {
@@ -172,16 +172,16 @@ section_container { /*check this*/
 }
 .section_text_p1 {
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 2rem;
     margin-bottom: 1rem;
 
 }
 .section_text_p2 {
-    font-size: 1.5rem;
+    font-size: 2rem;
     margin-bottom: 1.25rem; 
 }
 .title {
-    font-size: 2.0rem;
+    font-size: 3.0rem;
     text-align: center;
     margin-bottom: 1rem;
     color: rgb(195, 223, 230);
@@ -211,7 +211,7 @@ section_container { /*check this*/
     font-weight: 600;
     transition: all 300m ease;
     padding: 1rem;
-    width:8rem;
+    width:9rem;
     border-radius: 2.5rem;
 }
 /* btn text color */
@@ -230,7 +230,7 @@ section_container { /*check this*/
 
 .btn_color_1:hover,
 .btn_color_2:hover {
-    background: rgb(66, 137, 155);  
+    background:rgb(195, 223, 230);  
 }
 
 .btn_color_1:hover {
@@ -264,16 +264,16 @@ section_container { /*check this*/
     height: 30vh;
     padding: 1.5rem;
     flex: 1;
-    background: rgb(195, 223, 230);
+    background:rgb(244, 249, 251);
     border-radius: 2rem;
     border: rgb(53, 53, 53) 0.1rem solid;
-    border-color: rgb(163, 163, 163);
+    border-color: aliceblue;
     text-align: center;   
 }
 
 .details_container:hover {
     cursor: pointer;
-    background:white;
+    background:rgb(195, 223, 230);
     border: rgb(0, 0, 0) 0.1rem solid;
 }
 .icon {
@@ -307,5 +307,49 @@ section_container { /*check this*/
     height: 80%;
 }
 
+/* Experience */
 
+#experience {
+    position: relative;
+}
 
+.experience_subs {
+    color: white;
+    font-size: 1.75rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+.experience_details_container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;   
+}
+
+.article_container {
+    display: flex;
+    text-align: initial;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 2rem;
+    justify-content: space-around;
+
+}
+.details_containers {
+    padding: 1.5rem;
+    flex: 1;
+    background: rgb(195, 223, 230);
+    border-radius: 2rem;
+    border: rgb(53, 53, 53) 0.1rem solid;
+    border-color: rgb(163, 163, 163);
+    text-align: center;   
+}
+article {
+    display: flex;
+    width: 10rem;
+    justify-content: space-around;
+    gap: 0.5rem;
+}
+ article .icon {
+    cursor: default;
+ }
