@@ -5,9 +5,11 @@
     margin: 0;
     padding: 0;
 }
+
 body {
     background-color: rgb(35, 74, 84);
 }
+
 body {
   font-family: "Montserrat", sans-serif;
   color: rgb(186, 218, 226);
@@ -20,15 +22,6 @@ html {
 p {
     color:white;
 }
-
-.icon_arrow {
-    /* Your styles here */
-    width: 50px; /* Example: Set the width of the image */
-    height: 20rem; /* Maintain the aspect ratio */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Example: Add a shadow */
-    border-radius: 5px; /* Example: Add rounded corners */
-}
-
 
 /* Transition */
 
@@ -79,10 +72,12 @@ a:hover {
 #hamburger_nav {
     display: none;
 }
+
 .hamburger_menu {
     position: relative;
     display:inline-block ;
 }
+
 .hamburger_icon {
     display: flex;
     flex-direction: column;
@@ -119,12 +114,15 @@ a:hover {
     text-decoration: none;
     transition: all 0.3 ease-in-out;
 }
+
 .menu_links li { 
     list-style: none;
 }
+
 .menu_links.open {
     max-height: 300px;
 }
+
 .hamburger_icon.open span:first-child {
     transform: rotate(45deg) translate(10px, 5px); 
 }
@@ -159,6 +157,7 @@ section {
     min-height: fit-content;
 
 }
+
 section_container { /*check this*/
     display: flex;
 }
@@ -171,36 +170,43 @@ section_container { /*check this*/
     gap: 3rem;
     height: 80vh;
 }
+
 .section_pic_container {
     display: flex;
     height: 450px;
     width: 550px;
     margin:auto 0; 
 }
+
 .section_text {
     align-self: center;
     text-align: center;
 }
+
 .section_text p {
     font-weight: 600;
     
 }
+
 .section_text_p1 {
     text-align: center;
     font-size: 2rem;
     margin-bottom: 1rem;
 
 }
+
 .section_text_p2 {
     font-size: 2rem;
     margin-bottom: 1.25rem; 
 }
+
 .title {
     font-size: 3.0rem;
     text-align: center;
     margin-bottom: 1rem;
     color:rgb(223, 238, 242);
 }
+
 #socials_container {
     display: flex;
     justify-content: center;
@@ -212,7 +218,7 @@ section_container { /*check this*/
 
 .icon {
     cursor: pointer;
-    height: 4rem;
+    height: 3rem;
 }
 
 /* Buttons */
@@ -229,12 +235,16 @@ section_container { /*check this*/
     width:9rem;
     border-radius: 2.5rem;
 }
+
 /* btn text color */
 
-.btn_color_1,
 .btn_color_2 {
-    border: rgb(255, 255, 255) 0.1rem solid; 
+    border: black 0.1rem solid; 
     background:rgb(245, 250, 251);  
+}
+.btn_color_1 {
+    border: black 0.1rem solid;
+    background: rgb(195, 223, 230);
 }
 
 .btn_color_1:hover,
@@ -243,18 +253,21 @@ section_container { /*check this*/
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);  
 }
 
-.btn_color_1:hover,
+
 .btn_color_2:hover {
     background:rgb(195, 223, 230);
 
 }
+.btn_color_1:hover {
+    background:rgb(245, 250, 251);
+}
 
 .btn_color_1:hover {
-    border: rgb(13, 28, 32) 0.1rem solid;
+    border: rgb(242, 248, 250) 0.1rem solid;
 }
 
 .btn_color_2:hover {
-    border: rgb(13, 28, 32) 0.1rem solid;
+    border: rgb(242, 248, 250) 0.1rem solid;
 }
 
 .btn_container {
@@ -300,7 +313,7 @@ section_container { /*check this*/
 #about {
     position: relative;
 }
-.about_containers{
+.about_containers {
     gap: 2rem;
     margin-bottom: 2rem;
     margin-top: 2rem;
@@ -316,7 +329,8 @@ section_container { /*check this*/
 .arrow {
     position: absolute;
     right: -5rem;
-    bottom: 2.5rem;
+    bottom: 1rem;
+    height: 2rem;
 }
 
 .section_container {
@@ -356,6 +370,7 @@ section_container { /*check this*/
     flex-direction: row;
     gap: 2rem;
     justify-content: space-around;
+    margin-bottom: 1rem;
 
 }
 .details_containers {
@@ -382,13 +397,94 @@ article {
     gap: 0.5rem;
     color: rgb(13, 28, 32);
 }
- article .icon {
+
+article .icon {
     cursor: default;
 }
 
- article p {
+article p {
     color: rgb(40, 84, 95);
 }
 
+/* Project Section */
 
+#projects {
+    position: relative;
+}
  
+.color_container {
+    border-color: rgb(13, 28, 32);
+    background: rgb(245, 250, 251);
+
+}
+
+.project_img {
+    border-radius: 2rem;
+    width: 90%;
+    height: 90%;
+}
+
+.project_title {
+    margin: 1rem;
+    color: black;
+}
+
+.project_btn {
+    color: black;
+    border-color: rgb(38, 79, 90);
+}
+
+/* Contact */
+
+#contact {
+    display: flex;
+    justify-content: center ;
+    flex-direction: column;
+    height: 70vh;
+
+}
+
+.contact_info_upper_container {
+    display: flex;
+    justify-content: center;
+    border-radius: 2rem;
+    border: black 0.1rem solid;
+    border-color: black;
+    background: rgb(195, 223, 230);
+    margin: 2rem auto;
+    padding: 0.5rem;
+
+}
+
+.contact_info_container {
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    gap: 0.5rem;
+    margin: 1rem;
+}
+
+.contact_info_container p {
+    font-size: larger;
+}
+
+.contact_info_container a {
+    color: black;
+}
+
+
+.contact_icon {
+    cursor: default;
+    height: 2rem;
+    margin-top: 1.5rem;
+}
+
+/* Footer section */
+
+footer {
+    height: 26vh;
+    margin: 0 1rem;
+}
+footer p {
+    text-align: center;
+}
