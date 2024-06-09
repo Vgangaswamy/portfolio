@@ -158,7 +158,9 @@ section {
 
 }
 
-
+section_container { /*check this*/
+    display: flex;
+}
 
 /* profile section */
 
