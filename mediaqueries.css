@@ -41,12 +41,11 @@
 
     section {
         margin: 0 5%;
-
     }
 
-    section_pic_container {
+    .section_pic_container {
         width: 275px;
-        height: 275px;
+        height: 255px;
         margin: 0 auto 2rem;
     }
 
@@ -58,7 +57,6 @@
 @media (max-width: 768px) and  (max-width: 600px) {
     #contact, footer {
         height: 40vh;
-
     }
 
     #profile {
@@ -132,4 +130,140 @@
         border-radius: 1.5rem;
 
     }
+}
+@media (max-width: 1366px) and (max-height: 550px){
+
+    /* About mq */
+
+    #about {
+        height: 83vh;
+        margin-bottom: 6rem; 
+        position: relative;  
+    }
+
+    #about .title {
+        font-size: 2.5rem;
+    }
+
+    #about .section_text_p1 {
+        font-size: 1.5rem;
+    }
+
+    .about_containers {
+        gap: 1rem;
+        margin-bottom: 0rem;
+        margin-top: 0rem;
+    }
+
+    .details_container {
+        padding: 1rem;
+    }
+
+    .details_container .icon {
+        height: 3rem;
+    }
+
+    .details_container .paragraph { 
+        font-size: 1rem;
+        margin-bottom: 0rem;
+    }
+
+    .details_container .title2 {
+        font-size: 1rem;
+        margin-bottom: 0rem;
+    }
+    
+    .text_container p {
+        font-size: 1rem;
+    }
+
+    .arrow {
+        position: absolute;
+        right: -5rem; 
+        bottom: -5rem; 
+        height: 1.5rem
+    }
+
+    /* Experience mq */
+
+    #experience {
+        height: 80vh;
+        margin-bottom: 5rem; 
+        position: relative;
+    }
+
+    #experience .title {
+        font-size: 2.5rem;
+    }
+
+    #experience .section_text_p1 {
+        font-size: 1.5rem;
+    }
+
+    .details_containers {
+        padding: 1.5rem;
+    }
+
+    article {
+        display: flex;
+        width: 6rem;
+        justify-content: center;
+        gap: 0.5rem;
+        color: rgb(13, 28, 32);
+    }
+
+    article .icon {
+        cursor: default;
+        height: 2.25rem;
+    }
+
+    /* projects mq */
+
+    #projects {
+        height: 83vh;
+        margin-bottom: 6rem; 
+        position: relative;
+    }
+
+    #projects .section_text_p1 {
+        font-size: 1.25rem;
+        margin-bottom: 0.5rem;
+    }
+
+    #projects .title {
+        margin-top: 0rem;
+        font-size: 2.25rem;
+        margin-bottom: 0.5rem;
+    }
+
+    #experience .details_container {
+        justify-content: space-evenly;
+        padding: 0rem;
+        
+    }
+
+    .experience_subs, .color_container {
+        margin-bottom: 1rem;
+        font-size: 1.5rem;
+    }
+
+    #experience .article_container {
+        margin-bottom: 0.5rem;
+        justify-content: space-evenly;
+    }
+
+    .btn_container {
+        margin-bottom: 0rem;
+    }
+
+    #contact {
+        height: 80vh;
+        margin-bottom: 2rem; 
+        position: relative;
+    }
+
+    .contact_info_upper_container {
+        margin-bottom: 0rem;
+    }
+
 }
