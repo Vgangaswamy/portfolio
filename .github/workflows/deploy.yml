@@ -3,33 +3,20 @@ name: Deploy to Netlify
 on:
   push:
     branches:
-      - main  # Triggers on push to the main branch
+      - main  # Trigger the workflow on push to the main branch
 
 jobs:
-  build-deploy:
+  deploy:
     runs-on: ubuntu-latest
 
     steps:
-      # Step 1: Checkout the repository
+      # Step 1: Check out the repository
       - name: Checkout repository
         uses: actions/checkout@v2
 
-      # Step 2: Set up Node.js and install dependencies
-      - name: Set up Node.js
-        uses: actions/setup-node@v2
-        with:
-          node-version: '14'  # Specify Node.js version
-
-      - name: Install dependencies
-        run: npm install  # or yarn install
-
-      # Step 3: Build the project (if needed, e.g., for React, Vue, etc.)
-      - name: Build project
-        run: npm run build  # Adjust based on your project's build command
-
-      # Step 4: Deploy to Netlify
+      # Step 2: Deploy to Netlify
       - name: Deploy to Netlify
-        run: npm install -g netlify-cli && netlify deploy --prod --dir=build
+        run: npm install -g netlify-cli && netlify deploy --prod --dir=public  # Replace 'public' with your folder containing index.html
         env:
-          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}  # Reference the Netlify Auth Token
-          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}  # Reference the Netlify Site ID
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
