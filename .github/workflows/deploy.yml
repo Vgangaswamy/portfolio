@@ -10,13 +10,13 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # Step 1: Check out the repository
+      # Step 1: Checkout the repository
       - name: Checkout repository
         uses: actions/checkout@v2
 
       # Step 2: Deploy to Netlify
       - name: Deploy to Netlify
-        run: npm install -g netlify-cli && netlify deploy --prod --dir=public  # Replace 'public' with your folder containing index.html
+        run: npm install -g netlify-cli && netlify deploy --prod --dir=.
         env:
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
