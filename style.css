@@ -504,11 +504,11 @@ article p {
     gap: 1rem;
     width: 100%;
     max-width: 850px;
-    background-color: rgb(195, 223, 230);  /* Match the background of the contact section */
+    background-color: rgb(195, 223, 230);  
     border-radius: 2rem;
     padding: 1.5rem;
     border: 0.1rem solid black;
-    box-shadow: inset 0 6px 8px rgba(0, 0, 0, 0.1);  /* Add subtle shadow to match other containers */
+    box-shadow: inset 0 6px 8px rgba(0, 0, 0, 0.1);  
     margin: 0 auto;
 }
 
@@ -516,12 +516,12 @@ article p {
 .contact_form input, 
 .contact_form textarea {
     margin-top: 1rem;
-    width: 100%; /* Reduced the width to 90% of the form's width */
+    width: 100%; 
     max-width: 810px; 
     padding: 18px;
     font-size: 1rem;
     font-family: "Montserrat", sans-serif;
-    background-color: rgb(245, 250, 251); /* Slightly lighter shade to blend with the container */
+    background-color: rgb(245, 250, 251); 
     color: black;
     border: 0.1rem solid rgb(53, 53, 53);
     border-radius: 5px;
@@ -532,13 +532,12 @@ article p {
 .contact_form input:focus, 
 .contact_form textarea:focus {
     outline: none;
-    border-color: rgb(38, 79, 90);  /* Darken border color on focus for better UX */
-}
+    border-color: rgb(38, 79, 90);  
 
 .contact_form button {
     padding: 10px 20px;
     font-size: 1rem;
-    background-color: rgb(245, 250, 251); /* Matching the color of other buttons */
+    background-color: rgb(245, 250, 251); 
     color: black;
     border: 0.1rem solid rgb(53, 53, 53);
     border-radius: 2rem;
@@ -556,20 +555,20 @@ article p {
 /* Footer section */
 
 footer {
-    margin-top: 1rem; /* Space between the contact form and footer */
-    padding: 1rem; /* Padding for internal space */
-    background-color: rgb(35, 74, 84); /* Footer background color */
-    color: white; /* Text color for visibility */
-    text-align: center; /* Center the text */
-    min-height: 10vh; /* Add minimum height to the footer */
-    display: flex; /* Flexbox for vertical centering */
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
+    margin-top: 1rem; 
+    padding: 1rem; 
+    background-color: rgb(35, 74, 84);
+    color: white;
+    text-align: center;
+    min-height: 10vh;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
 }
 
 footer p {
-    margin: -30rem; /* Remove default margin */
-    padding: 1rem 0; /* Add padding for internal space */
+    margin: -30rem;
+    padding: 1rem 0; 
 }
 
 
