@@ -533,6 +533,7 @@ article p {
 .contact_form textarea:focus {
     outline: none;
     border-color: rgb(38, 79, 90);  
+}
 
 .contact_form button {
     padding: 10px 20px;
@@ -570,5 +571,3 @@ footer p {
     margin: -30rem;
     padding: 1rem 0; 
 }
-
-
