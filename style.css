@@ -338,7 +338,7 @@ section_container { /*check this*/
 .arrow {
     position: absolute;
     right: -5rem;
-    bottom: 1rem;
+    bottom: 2.25rem;
     height: 2rem;
 }
 
@@ -381,7 +381,6 @@ section_container { /*check this*/
     gap: 2rem;
     justify-content: space-around;
     margin-bottom: 1rem;
-
 }
 
 .details_containers {
@@ -461,8 +460,8 @@ article p {
     border: black 0.1rem solid;
     border-color: black;
     background: rgb(195, 223, 230);
-    margin: 2rem auto;
-    padding: 0.5rem;
+    margin: 1rem;
+    padding: 0rem;
 }
 
 .contact_info_container {
@@ -488,13 +487,89 @@ article p {
     margin-top: 1.5rem;
 }
 
+/* Contact Form  */
+
+#contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 90vh;
+    padding: 2rem;
+}
+
+.contact_form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+    max-width: 850px;
+    background-color: rgb(195, 223, 230);  /* Match the background of the contact section */
+    border-radius: 2rem;
+    padding: 1.5rem;
+    border: 0.1rem solid black;
+    box-shadow: inset 0 6px 8px rgba(0, 0, 0, 0.1);  /* Add subtle shadow to match other containers */
+    margin: 0 auto;
+}
+
+
+.contact_form input, 
+.contact_form textarea {
+    margin-top: 1rem;
+    width: 100%; /* Reduced the width to 90% of the form's width */
+    max-width: 810px; 
+    padding: 18px;
+    font-size: 1rem;
+    font-family: "Montserrat", sans-serif;
+    background-color: rgb(245, 250, 251); /* Slightly lighter shade to blend with the container */
+    color: black;
+    border: 0.1rem solid rgb(53, 53, 53);
+    border-radius: 5px;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s ease;
+}
+
+.contact_form input:focus, 
+.contact_form textarea:focus {
+    outline: none;
+    border-color: rgb(38, 79, 90);  /* Darken border color on focus for better UX */
+}
+
+.contact_form button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: rgb(245, 250, 251); /* Matching the color of other buttons */
+    color: black;
+    border: 0.1rem solid rgb(53, 53, 53);
+    border-radius: 2rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    margin: 0 auto;
+}
+
+.contact_form button:hover {
+    background-color: rgb(195, 223, 230);
+    border-color: rgb(13, 28, 32);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
 /* Footer section */
 
 footer {
-    height: 26vh;
-    margin: 0 1rem;
+    margin-top: 1rem; /* Space between the contact form and footer */
+    padding: 1rem; /* Padding for internal space */
+    background-color: rgb(35, 74, 84); /* Footer background color */
+    color: white; /* Text color for visibility */
+    text-align: center; /* Center the text */
+    min-height: 10vh; /* Add minimum height to the footer */
+    display: flex; /* Flexbox for vertical centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
 }
 
 footer p {
-    text-align: center;
+    margin: -30rem; /* Remove default margin */
+    padding: 1rem 0; /* Add padding for internal space */
 }
+
+

@@ -19,6 +19,7 @@
             </ul>
         </div>
     </nav>
+    
     <nav id="hamburger_nav">
         <div class="logo">Vidya Gangaswamy</div>
         <div class="hamburger_menu">
@@ -255,6 +256,22 @@
     <section id="contact">
         <p class="section_text_p1">Get in Touch</p>
         <h1 class="title">Contact Me</h1>
+    
+        <!-- Contact Form -->
+        <form id="contactForm" class="contact_form">
+            <input type="text" id="firstName" name="firstName" placeholder="First Name" required>
+            
+            <input type="text" id="lastName" name="lastName" placeholder="Last Name" required>
+            
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+            
+            <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+            
+            <button type="submit" class="btn btn_color_1">Send</button>
+        </form>
+
+    
+        <!-- Existing Contact Info -->
         <div class="contact_info_upper_container">
             <div class="contact_info_container">
                 <img src="./assets/mail.png" alt="Email icon" class="icon contact_icon"/>
@@ -266,19 +283,22 @@
             </div>
         </div>
     </section>
+    
     <footer>
-        <nav>
-            <div class="nav_links_container">
-                <ul class="nav_links">
-                    <li ><a href="#about">About</a></li>
-                    <li ><a href="#experience">Experience</a></li>
-                    <li ><a href="#projects">Projects</a></li>
-                    <li ><a href="#contact">Contact</a></li>
-                </ul>
-            </div>
-        </nav>
         <p>Copyright &#169; 2024 Vidya Gangaswamy. All Rights Preserved</p>
     </footer>
+    <!-- EmailJS SDK -->
+    <script type="text/javascript" src="https://cdn.emailjs.com/sdk/3.2.0/email.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+    (function(){
+        emailjs.init({
+            publicKey: "jPkjplxWVHVzSdQUJ",
+        });
+    })();
+    </script>
     <script src="script.js"></script>
 </body>
 </html>
