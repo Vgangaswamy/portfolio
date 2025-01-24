@@ -6,7 +6,8 @@
     
     .about_containers {
         flex-wrap: wrap;
-    }   
+    }
+      
     
 }
 
@@ -263,7 +264,11 @@
     }
 
     .contact_info_upper_container {
-        margin-bottom: 0rem;
+        margin-top: 0rem;
     }
 
+    footer {
+        margin-top: 20rem; 
+    }
+    
 }

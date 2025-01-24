@@ -18,7 +18,7 @@ document.getElementById("contactForm").addEventListener("submit", function(event
         return;
     }
 
-    // logs for debugging
+    // logs for console
     console.log("First Name: ", firstName);
     console.log("Last Name: ", lastName);
     console.log("Email: ", email);
